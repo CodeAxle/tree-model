@@ -28,7 +28,7 @@ def predict():
 
     output=model.predict(final_features)[0]
     print(output)
-    return render_template('home.html', prediction_text="An individual (here woman) had atleast one affair is : {}".format(output))
+    return render_template('home.html', prediction_text="Did the passenger survived : {}".format(output))
 
 if __name__=="__main__":
     app.run(debug=True)   
